@@ -1,0 +1,61 @@
+@import "../App";
+
+.Stack_container {
+  width: 100vw;
+  height: 100vh;
+  background-color: $white;
+}
+
+.Stack {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 45% 55%;
+}
+
+.Stack_img {
+  width: 100%;
+  height: 100%;
+  background-image: url(../Images/background.jpg);
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  align-items: flex-end;
+
+  h1 {
+    font-size: 7rem;
+    line-height: 3.4rem;
+    margin-left: 100px;
+    color: $white;
+  }
+}
+
+.Stack_explain {
+  padding: 50px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Stack_kind {
+  .list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+    .name {
+      display: flex;
+      margin-bottom: 20px;
+      .circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        background-color: $purple;
+        margin-right: 10px;
+      }
+
+      .title {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

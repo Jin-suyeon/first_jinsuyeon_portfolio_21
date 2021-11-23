@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans&display=swap");
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+$black: #060606;
+$purple: #6e3ea4;
+$light-grey: #ececec;
+$white: #fafafa;
+$deep-grey: #9b9b9b;
+
+$f-white: invert(100%) sepia(78%) saturate(0%) hue-rotate(69deg)
+  brightness(107%) contrast(96%);
+$f-black: invert(0%) sepia(93%) saturate(7474%) hue-rotate(291deg)
+  brightness(88%) contrast(93%);
+$f-purple: invert(29%) sepia(43%) saturate(1216%) hue-rotate(231deg)
+  brightness(94%) contrast(97%);
+$f-light-grey: invert(100%) sepia(6%) saturate(120%) hue-rotate(198deg)
+  brightness(112%) contrast(85%);
+$f-deep-grey: invert(73%) sepia(9%) saturate(14%) hue-rotate(355deg)
+  brightness(86%) contrast(77%);
+
+$breakpoint-mobile: 375px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 1024px;
+$breakpoint-desktop: 1440px;
+
+@mixin mobile {
+  @media screen and (max-width: $breakpoint-mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (max-width: $breakpoint-laptop) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (max-width: $breakpoint-desktop) {
+    @content;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Martel Sans", sans-serif;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: $black;
+}
+
+html {
+  font-size: 10px;
+}

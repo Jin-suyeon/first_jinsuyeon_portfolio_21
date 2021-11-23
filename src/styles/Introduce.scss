@@ -1,0 +1,66 @@
+@import "../App";
+
+.Introduce_container {
+  width: 100vw;
+  height: 100vh;
+  background-color: $white;
+}
+
+.Introduce {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 45% 55%;
+}
+
+.Introduce_myImg {
+  width: 100%;
+  height: 100%;
+  background-image: url(../Images/suyeon.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.Introduce_explain {
+  width: 100%;
+  height: 100%;
+  padding: 0px 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h1 {
+    font-size: 7rem;
+    margin-bottom: 100px;
+    line-height: 7rem;
+    color: $purple;
+  }
+
+  .contant_container {
+    margin-bottom: 50px;
+    .main {
+      font-size: 2.6rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .contant {
+      display: flex;
+      font-size: 1.4rem;
+      .sub {
+        width: 60px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .explain {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+
+  .my_introduce {
+    font-size: 1.4rem;
+  }
+}

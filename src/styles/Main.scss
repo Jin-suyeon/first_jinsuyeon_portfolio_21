@@ -1,0 +1,69 @@
+@import "../App";
+
+.Main_container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.Main {
+  width: 100vw;
+  height: 100vh;
+}
+
+.Main_background {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../Images/background.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 9rem;
+  color: $white;
+
+  div {
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+
+    .up {
+      position: relative;
+      top: -50px;
+    }
+
+    .down {
+      position: relative;
+      top: 50px;
+    }
+  }
+
+  img {
+    position: absolute;
+    bottom: 30px;
+    width: 60px;
+    transform: rotate(180deg);
+    filter: $f-deep-grey;
+    cursor: pointer;
+  }
+}
+
+.Main_index {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  top: 100vh;
+  transition: all 1s;
+}
+
+.Main_index_change {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  transition: all 1s;
+}
