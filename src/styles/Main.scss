@@ -31,11 +31,13 @@
     .up {
       position: relative;
       top: -50px;
+      animation: bouncy 3s infinite ease-in-out;
     }
 
     .down {
       position: relative;
       top: 50px;
+      animation: bouncy1 3s infinite ease-in-out;
     }
   }
 
@@ -66,4 +68,17 @@
   z-index: 10;
   top: 0;
   transition: all 1s;
+}
+
+@keyframes bouncy {
+  50% {
+    transform: translate(0, 50px);
+  }
+}
+
+@keyframes bouncy1 {
+  50% {
+    transform: translate(0, -50px);
+    height: 34px;
+  }
 }

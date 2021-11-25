@@ -1,0 +1,46 @@
+@import "../App";
+
+.Education {
+  padding: 40px 0 0 0;
+  .list {
+    margin-top: 70px;
+
+    &:nth-child(1) {
+      margin-top: 0;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      line-height: 1.6rem;
+      margin: 3px 0 10px 0;
+    }
+
+    div {
+      font-size: 1.2rem;
+    }
+
+    .day {
+      color: $deep-grey;
+    }
+
+    .explain {
+      margin-bottom: 30px;
+    }
+
+    .explain_list {
+      .list_in {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
+        .circle {
+          width: 15px;
+          height: 15px;
+          border-radius: 10px;
+          background-color: $purple;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
