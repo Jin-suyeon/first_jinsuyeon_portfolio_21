@@ -1,84 +1,53 @@
 @import "../App";
 
 .Main_container {
+  position: relative;
   width: 100vw;
-  height: 100vh;
-}
-
-.Main {
-  width: 100vw;
-  height: 100vh;
+  height: 100%;
 }
 
 .Main_background {
   position: relative;
-  z-index: 0;
   width: 100%;
   height: 100%;
   background-image: url(../Images/background.jpg);
   background-size: cover;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 9rem;
   color: $white;
 
-  div {
-    width: 70vw;
-    display: flex;
-    justify-content: space-between;
+  .title {
+    font-size: 7rem;
+    font-weight: 600;
+    letter-spacing: 0.7rem;
+    line-height: 11rem;
+  }
 
-    .up {
-      position: relative;
-      top: -50px;
-      animation: bouncy 3s infinite ease-in-out;
-    }
+  .sub_title {
+    font-size: 3rem;
+  }
+}
 
-    .down {
-      position: relative;
-      top: 50px;
-      animation: bouncy1 3s infinite ease-in-out;
-    }
+.scroll {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    font-size: 1.6rem;
+    letter-spacing: 3px;
   }
 
   img {
-    position: absolute;
     bottom: 30px;
-    width: 60px;
+    width: 40px;
     transform: rotate(180deg);
-    filter: $f-deep-grey;
-    cursor: pointer;
-  }
-}
-
-.Main_index {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  position: absolute;
-  top: 100vh;
-  transition: all 1s;
-}
-
-.Main_index_change {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  position: absolute;
-  z-index: 10;
-  top: 0;
-  transition: all 1s;
-}
-
-@keyframes bouncy {
-  50% {
-    transform: translate(0, 50px);
-  }
-}
-
-@keyframes bouncy1 {
-  50% {
-    transform: translate(0, -50px);
-    height: 34px;
+    filter: $f-white;
   }
 }

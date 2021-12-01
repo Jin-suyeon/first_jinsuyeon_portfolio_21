@@ -1,46 +1,70 @@
 @import "../App";
 
+.Education_container {
+  width: 100%;
+  height: 100%;
+  background-color: $white;
+  position: relative;
+}
+
 .Education {
-  padding: 40px 0 0 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.Education_title {
+  background: $gra;
+  border-radius: 50vh 0 0 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    color: $white;
+    font-size: 6rem;
+    letter-spacing: 5px;
+    font-weight: 600;
+  }
+}
+
+.Education_explain_list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   .list {
-    margin-top: 70px;
-
-    &:nth-child(1) {
-      margin-top: 0;
-    }
-
-    h1 {
-      font-size: 1.6rem;
-      line-height: 1.6rem;
-      margin: 3px 0 10px 0;
-    }
-
-    div {
-      font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    &:nth-child(2) {
+      margin-top: 60px;
     }
 
     .day {
+      font-size: 1.2rem;
+      letter-spacing: 2px;
       color: $deep-grey;
     }
 
-    .explain {
+    h2 {
+      font-size: 2rem;
+      letter-spacing: 2px;
+      line-height: 3rem;
+    }
+
+    .sub-title {
+      font-size: 1.6rem;
+      letter-spacing: 2px;
       margin-bottom: 30px;
     }
 
-    .explain_list {
-      .list_in {
-        display: flex;
-        align-items: center;
-        margin-bottom: 10px;
-
-        .circle {
-          width: 15px;
-          height: 15px;
-          border-radius: 10px;
-          background-color: $purple;
-          margin-right: 10px;
-        }
-      }
+    .text {
+      font-size: 1.6rem;
+      letter-spacing: 2px;
+      line-height: 3rem;
     }
   }
 }

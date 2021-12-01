@@ -2,64 +2,69 @@
 
 .Stack_container {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background-color: $white;
+  position: relative;
 }
 
 .Stack {
   width: 100vw;
-  height: 100vh;
-  display: grid;
-  grid-template-rows: 45% 55%;
-}
-
-.Stack_img {
-  width: 100%;
   height: 100%;
-  background-image: url(../Images/background.jpg);
-  background-size: cover;
-  background-position: top;
-  display: flex;
-  align-items: flex-end;
-
-  h1 {
-    font-size: 7rem;
-    line-height: 3.4rem;
-    margin-left: 100px;
-    color: $white;
-  }
+  display: grid;
+  grid-template-rows: 35% 15% 50%;
 }
 
-.Stack_explain {
-  padding: 50px 100px;
+.Stack_title {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-}
+  align-items: flex-start;
+  justify-content: center;
 
-.Stack_kind {
   h1 {
-    font-size: 1.6rem;
-  }
-  .list {
+    width: 517px;
+    height: 258px;
+    border-radius: 0 0 300px 300px;
     display: flex;
-    flex-direction: column;
-    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+    letter-spacing: 5px;
+    font-weight: 600;
+    color: $white;
+    background: $gra;
+  }
+}
 
-    .name {
-      display: flex;
-      align-items: center;
-      margin-bottom: 20px;
-      .circle {
-        width: 15px;
-        height: 15px;
-        border-radius: 10px;
-        background-color: $purple;
-        margin-right: 10px;
-      }
+.Stack_lists {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-      .title {
-        font-size: 1.2rem;
-      }
+  button {
+    height: 40px;
+    font-size: 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    border: none;
+    background-color: inherit;
+    &:nth-child(1) {
+      margin-right: 80px;
     }
   }
+
+  .list {
+    border-bottom: 3px solid $white;
+  }
+
+  .list_change {
+    border-bottom: 3px solid $purple;
+  }
+}
+
+.Stack_types {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

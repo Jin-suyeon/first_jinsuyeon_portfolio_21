@@ -1,67 +1,112 @@
 @import "../App";
 
 .Introduce_container {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
+  background-color: $white;
+  position: relative;
+}
+
+#white-background {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  display: none;
   background-color: $white;
 }
 
-.Introduce {
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 45% 55%;
-}
-
-.Introduce_myImg {
+#Introduce {
   width: 100%;
   height: 100%;
-  background-image: url(../Images/suyeon.jpeg);
-  background-size: cover;
-  background-position: center;
-}
-
-.Introduce_explain {
-  width: 100%;
-  height: 100%;
-  padding: 0px 90px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
+}
+
+#Introduce_img {
+  position: relative;
+  width: 460px;
+  height: 460px;
+  border-radius: 250px;
+  background-image: url(../Images/suyeon.jpeg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 15px solid $white;
+  cursor: pointer;
+
+  span {
+    width: 300px;
+    height: 60px;
+    background-color: $pink;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+}
+
+.Introduce_click {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  span {
+    font-size: 2rem;
+    line-height: 2rem;
+    letter-spacing: 2px;
+    color: $purple;
+    opacity: 1;
+  }
+
+  img {
+    width: 40px;
+    filter: $f-purple;
+  }
+
+  .change-arrow {
+    transform: rotate(180deg);
+  }
+}
+
+#Introduce_explain {
+  display: none;
+  flex-direction: column;
+  margin-left: 100px;
 
   h1 {
-    font-size: 7rem;
-    margin-bottom: 100px;
-    line-height: 7rem;
-    color: $purple;
+    font-size: 2.6rem;
+    margin-bottom: 30px;
   }
 
-  .contant_container {
-    margin-bottom: 50px;
-    .main {
-      font-size: 2.6rem;
-      font-weight: 600;
-      margin-bottom: 10px;
-    }
-
-    .contant {
-      display: flex;
-      font-size: 1.4rem;
-      .sub {
-        width: 60px;
-        font-weight: 600;
-        display: flex;
-        flex-direction: column;
-      }
-
-      .explain {
-        display: flex;
-        flex-direction: column;
-      }
-    }
-  }
-
-  .my_introduce {
+  .contant {
     font-size: 1.4rem;
+    line-height: 2.2rem;
+    margin-bottom: 50px;
+
+    div {
+      span {
+        &:nth-child(1) {
+          margin-right: 20px;
+          font-weight: 600;
+          color: $deep-grey;
+        }
+      }
+    }
+  }
+
+  .explain {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
   }
 }

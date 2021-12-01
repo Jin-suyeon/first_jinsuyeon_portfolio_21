@@ -1,33 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/Stack.scss";
-import BackButton from "../components/BackButton";
-import { stackInfo } from "../asset/stackInfo";
+import { stackList } from "../asset/stackInfo";
+import ScrollTop from "../components/ScrollTop";
+import Front from "../components/Front";
+import Back from "../components/Back";
 
 function Stack() {
+  const [choice, setChoice] = useState(false);
   return (
     <div className="Stack_container">
-      <BackButton />
+      <ScrollTop />
       <div className="Stack">
-        <div className="Stack_img">
+        <div className="Stack_title">
           <h1>Stack</h1>
         </div>
-
-        <div className="Stack_explain">
-          {stackInfo.map((info) => (
-            <div className="Stack_kind">
-              <h1>{info.title}</h1>
-
-              <div className="list">
-                {info.texts.map((text) => (
-                  <div className="name">
-                    <div className="circle" />
-                    <div className="title">{text}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
+        <div className="Stack_lists">
+          <button
+            onClick={() => setChoice(false)}
+            className={choice ? "list" : "list_change"}
+          >
+            Front-end
+          </button>
+          <button
+            onClick={() => setChoice(true)}
+            className={choice ? "list_change" : "list"}
+          >
+            Back-end / Database / Others
+          </button>
         </div>
+        <div className="Stack_types">{choice ? <Back /> : <Front />}</div>
       </div>
     </div>
   );

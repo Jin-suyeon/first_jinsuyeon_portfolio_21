@@ -1,57 +1,101 @@
 import React from "react";
-import BackButton from "../components/BackButton";
+import ScrollTop from "../components/ScrollTop";
 import "../styles/Introduce.scss";
 
 function Introduce() {
+  const showInroduce = () => {
+    const arrow = document.getElementsByClassName("Introduce_click");
+    const columnChange = document.getElementById("Introduce");
+    const IntroduceExplain = document.getElementById("Introduce_explain");
+    const whiteBackground = document.getElementById("white-background");
+    const sticker = document.getElementById("img_sticker");
+    const IntroduceImg = document.getElementById("Introduce_img");
+
+    whiteBackground.style.zIndex = "500";
+    whiteBackground.style.opacity = "1";
+    whiteBackground.style.display = "flex";
+
+    setTimeout(() => {
+      whiteBackground.style.transition = "all 1s";
+      whiteBackground.style.opacity = "0";
+    }, 100);
+
+    setTimeout(() => {
+      whiteBackground.style.display = "none";
+    }, 1000);
+
+    for (let i = 0; i < arrow.length; i++) {
+      arrow[i].style.display = "none";
+    }
+
+    columnChange.style.flexDirection = "row";
+    IntroduceExplain.style.display = "flex";
+    sticker.style.opacity = "0";
+    IntroduceImg.style.cursor = "auto";
+  };
+
   return (
     <div className="Introduce_container">
-      <BackButton />
-      <div className="Introduce">
-        <div className="Introduce_myImg"></div>
-        <div className="Introduce_explain">
-          <h1>Introduce</h1>
+      <ScrollTop />
+      <div id="white-background"></div>
+      <div id="Introduce">
+        <div className="Introduce_click">
+          <span>Click</span>
+          <img
+            className="change-arrow"
+            src="/icons/icon_arrow_up.svg"
+            alt="arrow"
+          />
+        </div>
 
-          <div className="contant_container">
-            <div className="main">진수연</div>
-            <div className="contant">
-              <div className="sub">
-                <span>Mobile</span>
-                <span>E-Mail</span>
-                <span>Github</span>
-                <span>Blog</span>
-              </div>
-              <div className="explain">
-                <span>010-5414-1994</span>
-                <span>wlstndus99@gmail.com</span>
-                <a target="_blank" href="https://github.com/Jin-suyeon">
-                  https://github.com/Jin-suyeon
-                </a>
-                <a target="_blank" href="www.notion.so/jinsuyeon">
-                  www.notion.so/jinsuyeon
-                </a>
-              </div>
+        <div onClick={() => showInroduce()} id="Introduce_img">
+          <span id="img_sticker">suyeon's Introduce</span>
+        </div>
+
+        <div className="Introduce_click">
+          <img src="/icons/icon_arrow_up.svg" alt="arrow" />
+          <span>Click</span>
+        </div>
+
+        <div id="Introduce_explain">
+          <h1>진수연</h1>
+          <div className="contant">
+            <div>
+              <span>Mobile</span>
+              <span>010-5414-1994</span>
+            </div>
+            <div>
+              <span>E-Mail</span>
+              <span>wlstndus99@gmail.com</span>
+            </div>
+            <div>
+              <span>Github</span>
+              <a
+                href="https://github.com/Jin-suyeon"
+                rel="noreferrer"
+                target="_blank"
+              >
+                https://github.com/Jin-suyeon
+              </a>
+            </div>
+            <div>
+              <span>Blog</span>
+              <a href="www.notion.so/jinsuyeon" target="_blank">
+                www.notion.so/jinsuyeon
+              </a>
             </div>
           </div>
-
-          <div className="my_introduce">
-            저는 주변에 개발자인 친구가 있습니다.
-            <br />그 친구를 만날 때마다 개발에 대한 얘기들을 많이 들었습니다.
-            <br />그 얘기를 들으며 '내가 참여해서 만든 결과물을 사람들이 직접
-            사용한다면 얼마나 뿌듯할까?'
+          <div className="explain">
+            안녕하세요 재미있는 개발을 하고 싶은 프론트엔드 개발자 진수연입니다.
+            저는 디자인 직종에 있던 사람입니다.
             <br />
-            라는 생각을 시작으로 흥미를 가지기 시작했고, 웹개발 부트캠프인
-            코드스테이츠에 등록을 하며
+            회사를 다니던 중 코로나 이슈로 같은 직종의 회사들의 사정이
+            안좋아지면서,
             <br />
-            코딩을 시작하게 되었습니다.
-            <br />
-            코드스테이츠에 들어와서 마지막 과정인 2주, 4주 프로젝트를 진행하며
-            <br />
-            여러가지 새로운 것들에 대해 공부해보고, 그것들을 직접 적용하면서
-            <br />
-            사이트가 구현되어가는 모습을 보았을 때 코딩을 시작한 계기인 "얼마나
-            뿌듯할까?"의
-            <br />
-            감정을 실제로 느끼게 되었습니다.
+            커리어전환을 생각하다가 전부터 흥미를 가지고 있던 코딩에 대해
+            생각하게되었습니다.
+            <br /> 그 후 몇달동안의 고민 끝에 부트캠프인 코드스테이츠에
+            들어가게되었습니다.
           </div>
         </div>
       </div>

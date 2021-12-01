@@ -1,6 +1,6 @@
 export const educationInfo = [
   {
-    day: "2013.042 - 2017.02",
+    day: "2013.02 - 2017.02",
     title: "대진대학교(졸업)",
     subTitle: "제품환경디자인 전공",
     texts: [],
