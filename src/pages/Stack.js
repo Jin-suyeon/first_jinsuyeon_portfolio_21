@@ -1,34 +1,43 @@
 import React, { useState } from "react";
 import "../styles/Stack.scss";
 import { stackList } from "../asset/stackInfo";
-import ScrollTop from "../components/ScrollTop";
-import Front from "../components/Front";
-import Back from "../components/Back";
 
 function Stack() {
   const [choice, setChoice] = useState(false);
+
+  const pageChange = () => {
+    const stackTitle = document.getElementById("Stack_title");
+    stackTitle.style.left = "100vw";
+
+    setTimeout(() => {
+      stackTitle.style.display = "none";
+    }, 1000);
+  };
+
   return (
     <div className="Stack_container">
-      <ScrollTop />
+      <div id="Stack_title">
+        <div className="title">
+          <h1>STACK</h1>
+        </div>
+        <div className="white">
+          <img
+            onClick={() => pageChange()}
+            src="/icons/icon_arrow_up.svg"
+            alt="arrow"
+          />
+        </div>
+      </div>
+
       <div className="Stack">
-        <div className="Stack_title">
-          <h1>Stack</h1>
-        </div>
+        <h1 className="title2">STACK</h1>
         <div className="Stack_lists">
-          <button
-            onClick={() => setChoice(false)}
-            className={choice ? "list" : "list_change"}
-          >
-            Front-end
-          </button>
-          <button
-            onClick={() => setChoice(true)}
-            className={choice ? "list_change" : "list"}
-          >
-            Back-end / Database / Others
-          </button>
+          {stackList.map((info) => (
+            <div>
+              <img className={info.class} src={info.img} alt="js" />
+            </div>
+          ))}
         </div>
-        <div className="Stack_types">{choice ? <Back /> : <Front />}</div>
       </div>
     </div>
   );

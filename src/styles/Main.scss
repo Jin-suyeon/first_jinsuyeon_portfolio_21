@@ -19,35 +19,56 @@
   color: $white;
 
   .title {
-    font-size: 7rem;
-    font-weight: 600;
-    letter-spacing: 0.7rem;
-    line-height: 11rem;
-  }
-
-  .sub_title {
+    width: 29ch;
+    white-space: nowrap;
+    overflow: hidden;
     font-size: 3rem;
+    border-right: 3px solid;
+    animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
   }
 }
 
 .scroll {
   position: absolute;
-  bottom: 30px;
-  width: 100%;
+  bottom: 35px;
+  width: 30px;
+  height: 50px;
+  border: 2px solid $white;
+  border-radius: 15px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 
   span {
-    font-size: 1.6rem;
-    letter-spacing: 3px;
+    position: relative;
+    top: -10px;
+    width: 3px;
+    height: 10px;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.516);
+    animation: scroll 2s infinite;
   }
+}
 
-  img {
-    bottom: 30px;
-    width: 40px;
-    transform: rotate(180deg);
-    filter: $f-white;
+@keyframes scroll {
+  from {
+    top: -10px;
+    opacity: 1;
+  }
+  to {
+    top: -4px;
+    opacity: 0;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
   }
 }

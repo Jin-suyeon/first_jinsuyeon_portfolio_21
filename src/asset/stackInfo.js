@@ -1,60 +1,14 @@
-export const frontStackList = [
-  {
-    title: "Javascript",
-    dash: "80, 100",
-    class: "gra1",
-  },
-  {
-    title: "HTML",
-    dash: "80, 100",
-    class: "gra2",
-  },
-  {
-    title: "CSS",
-    dash: "90, 100",
-    class: "gra3",
-  },
-  {
-    title: "SCSS",
-    dash: "70, 100",
-    class: "gra4",
-  },
-  {
-    title: "React",
-    dash: "80, 100",
-    class: "gra5",
-  },
-  {
-    title: "Redux",
-    dash: "60, 100",
-    class: "gra6",
-  },
-];
-
-export const backStackList = [
-  {
-    title: "express",
-    dash: "70, 100",
-    class: "gra1",
-  },
-  {
-    title: "Node.js",
-    dash: "80, 100",
-    class: "gra2",
-  },
-  {
-    title: "MySQL",
-    dash: "80, 100",
-    class: "gra3",
-  },
-  {
-    title: "Git",
-    dash: "70, 100",
-    class: "gra4",
-  },
-  {
-    title: "AWS_S3",
-    dash: "70, 100",
-    class: "gra5",
-  },
+export const stackList = [
+  { class: "list1", img: "/images/js2.png" },
+  { class: "list2", img: "/images/HTML5.svg" },
+  { class: "list3", img: "/images/css.png" },
+  { class: "list4", img: "/images/sass2.png" },
+  { class: "list5", img: "/images/react2.png" },
+  { class: "list6", img: "/images/redux.png" },
+  { class: "list7", img: "/images/typescript.png" },
+  { class: "list8", img: "/images/express.png" },
+  { class: "list9", img: "/images/node.png" },
+  { class: "list10", img: "/images/mysql2.jpeg" },
+  { class: "list11", img: "/images/s3.png" },
+  { class: "list12", img: "/images/Github.png" },
 ];
