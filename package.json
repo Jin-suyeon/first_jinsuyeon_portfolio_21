@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start": "node-sass src/App.scss src/style.css && react-scripts start",
-    "build": "node-sass src/App.scss src/style.css && GENERATE_SOURCEMAP=false react-scripts build",
+    "build": "node-sass src/App.scss src/style.css && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
