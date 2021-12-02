@@ -38,7 +38,7 @@ function Introduce() {
       <div id="white-background"></div>
       <div id="Introduce">
         <div className="Introduce_click">
-          <span>Click</span>
+          <span>CLICK</span>
           <img
             className="change-arrow"
             src="/icons/icon_arrow_up.svg"
@@ -52,7 +52,7 @@ function Introduce() {
 
         <div className="Introduce_click">
           <img src="/icons/icon_arrow_up.svg" alt="arrow" />
-          <span>Click</span>
+          <span>CLICK</span>
         </div>
 
         <div id="Introduce_explain">
