@@ -102,8 +102,12 @@ function Introduce() {
             </div>
             <div>
               <span>Blog</span>
-              <a href="www.notion.so/jinsuyeon" target="_blank">
-                www.notion.so/jinsuyeon
+              <a
+                rel="noreferrer"
+                href="https://jinsuyeon.notion.site/"
+                target="_blank"
+              >
+                https://jinsuyeon.notion.site/
               </a>
             </div>
           </div>
