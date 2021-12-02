@@ -7,10 +7,10 @@ function MrGreen() {
       <h1 className="Gunsigi_title">PROJECT</h1>
       <div className="Gunsigi">
         <div className="Gunsigi_site">
-          <img src="/images/mrGreen.png" alt="gunsigi" />
+          <img src="/images/mrGreen.webp" alt="gunsigi" />
         </div>
         <div className="Gunsigi_explain">
-          <img src="/images/logo_mrGreen.png" alt="gunsigi_logo" />
+          <img src="/images/logo_mrGreen.webp" alt="gunsigi_logo" />
           <div className="text">
             당신을 위한 식물 큐레이터 mr.Green이 반려 식물을 추천해 드립니다
             <br />

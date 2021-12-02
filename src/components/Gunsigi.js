@@ -7,10 +7,10 @@ function Gunsigi() {
       <h1 className="Gunsigi_title">PROJECT</h1>
       <div className="Gunsigi">
         <div className="Gunsigi_site">
-          <img src="/images/gunsigi.png" alt="gunsigi" />
+          <img src="/images/gunsigi.webp" alt="gunsigi" />
         </div>
         <div className="Gunsigi_explain">
-          <img src="/images/logo_gunsigi.png" alt="gunsigi_logo" />
+          <img src="/images/logo_gunsigi.webp" alt="gunsigi_logo" />
           <div className="text">
             건강기능식품을 다양한 조건으로 검색하고
             <br />

@@ -1,2 +1,0 @@
-export const OPEN_INDEX_PAGE = "SET_INDEX_PAGE";
-export const CLOSE_INDEX_PAGE = "SET_INDEX_PAGE";
