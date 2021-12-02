@@ -1,18 +1,97 @@
 @import "../App";
 
 .Gunsigi_conatiner {
-  width: 80%;
-  height: 80%;
-  background-color: $white;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.Gunsigi_title {
+  position: absolute;
+  left: 50px;
+  font-size: 6rem;
+  color: $white;
+  letter-spacing: 2px;
+}
+
+.Gunsigi_title2 {
+  position: absolute;
+  font-family: sans-serif;
+  right: 50px;
+  font-size: 6rem;
+  color: $white;
 }
 
 .Gunsigi {
-  width: 100%;
+  width: 35%;
   height: 100%;
+  border-radius: 5px;
+  background-color: $white;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.Gunsigi_site {
+  img {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+}
+
+.Gunsigi_explain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 35px 0;
 
   img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
+    width: 20%;
+    object-fit: contain;
+  }
+
+  .text {
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+
+  .buttons {
+    button {
+      width: 100px;
+      height: 30px;
+      font-size: 1.6rem;
+      border: 2px solid $black;
+      background-color: inherit;
+      border-radius: 3px;
+      font-size: 1.2rem;
+      cursor: pointer;
+
+      a {
+        display: block;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        line-height: 27px;
+      }
+
+      &:nth-child(1) {
+        margin-right: 20px;
+      }
+
+      &:hover {
+        border: 2px solid $purple;
+      }
+
+      &:hover a {
+        color: $purple;
+      }
+    }
   }
 }

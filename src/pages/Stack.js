@@ -1,10 +1,7 @@
-import React, { useState } from "react";
 import "../styles/Stack.scss";
 import { stackList } from "../asset/stackInfo";
 
 function Stack() {
-  const [choice, setChoice] = useState(false);
-
   const pageChange = () => {
     const stackTitle = document.getElementById("Stack_title");
     stackTitle.style.left = "100vw";

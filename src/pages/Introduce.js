@@ -62,7 +62,7 @@ function Introduce() {
               rel="noreferrer"
               target="_blank"
             >
-              Resume
+              RESUME
             </a>
           </button>
 
