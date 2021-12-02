@@ -3,7 +3,9 @@
 .Project_container {
   width: 100vw;
   height: 100%;
-  background: $gra;
+  background: url(../Images/project.webp);
+  background-position: left;
+  background-size: cover;
   position: relative;
   display: flex;
   flex-direction: column;
