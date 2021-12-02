@@ -145,12 +145,14 @@
       }
 
       span {
+        font-family: sans-serif;
         &:nth-child(2) {
           color: $deep-grey;
         }
       }
 
       a {
+        font-family: sans-serif;
         color: $deep-grey;
 
         &:hover {
