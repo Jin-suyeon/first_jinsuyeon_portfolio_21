@@ -30,7 +30,7 @@ function Introduce() {
       <div id="Intoroduce_About">
         {/* <div className="Introduce_img_About" /> */}
         <img
-          src="/Images/suyeon.webp"
+          src="/images/suyeon.webp"
           alt="me"
           className="Introduce_img_About"
         />
