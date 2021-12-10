@@ -212,3 +212,51 @@
 .slick-next:active {
   /* transform: scale(0.99); */
 }
+
+@media screen and (max-width: 650px) {
+  .slick-prev {
+    color: white;
+    background-color: transparent;
+    z-index: 10;
+    left: 20px;
+  }
+
+  .slick-next {
+    color: white;
+    background-color: transparent;
+    z-index: 10;
+    right: 20px;
+  }
+
+  .slick-arrow {
+    font-size: 40px;
+    width: 30px;
+    transform: rotate(90deg);
+    filter: invert(100%) sepia(78%) saturate(0%) hue-rotate(69deg)
+      brightness(107%) contrast(96%);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .slick-prev {
+    color: white;
+    background-color: transparent;
+    z-index: 10;
+    left: 15px;
+  }
+
+  .slick-next {
+    color: white;
+    background-color: transparent;
+    z-index: 10;
+    right: 15px;
+  }
+
+  .slick-arrow {
+    font-size: 40px;
+    width: 20px;
+    transform: rotate(90deg);
+    filter: invert(100%) sepia(78%) saturate(0%) hue-rotate(69deg)
+      brightness(107%) contrast(96%);
+  }
+}

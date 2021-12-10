@@ -72,3 +72,36 @@
     border-color: transparent;
   }
 }
+
+@include tablet {
+  .Main_background {
+    .title {
+      font-size: 2.6rem;
+    }
+  }
+}
+
+@include mobile {
+  .Main_background {
+    .title {
+      font-size: 1.5rem;
+    }
+  }
+
+  .scroll {
+    width: 24px;
+    height: 40px;
+    border: 1px solid $white;
+    border-radius: 15px;
+
+    span {
+      position: relative;
+      top: -10px;
+      width: 3px;
+      height: 8px;
+      border-radius: 2px;
+      background-color: rgba(255, 255, 255, 0.516);
+      animation: scroll 2s infinite;
+    }
+  }
+}

@@ -27,8 +27,7 @@ html {
 .App {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
-  height: 100vh;
-  min-width: 1110px; }
+  height: 100vh; }
   .App .full-Page {
     height: 100%;
     display: flex;

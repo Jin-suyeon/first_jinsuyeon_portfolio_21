@@ -12,7 +12,7 @@ function MrGreen() {
         <div className="Gunsigi_explain">
           <img src="/images/logo_mrGreen.webp" alt="gunsigi_logo" />
           <div className="text">
-            당신을 위한 식물 큐레이터 mr.Green이 반려 식물을 추천해 드립니다
+            식물 큐레이터 mr.Green이 반려 식물을 추천해 드립니다
             <br />
             다양한 테마별 식물 추천 목록을 살펴보고,
             <br />

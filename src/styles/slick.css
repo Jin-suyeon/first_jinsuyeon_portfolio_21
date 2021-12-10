@@ -16,7 +16,6 @@
   touch-action: pan-y;
   -webkit-tap-highlight-color: transparent;
   background-color: transparent;
-  min-width: 1110px;
 }
 
 .slick-list {

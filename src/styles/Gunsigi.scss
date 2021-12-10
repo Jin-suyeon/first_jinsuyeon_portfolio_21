@@ -2,44 +2,48 @@
 
 .Gunsigi_conatiner {
   width: 100%;
-  height: 70vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
+  align-items: center;
   position: relative;
 }
 
 .Gunsigi_title {
   position: absolute;
-  left: 50px;
-  font-size: 6rem;
-  color: $white;
+  top: 85px;
+  left: -35px;
+  font-size: 5rem;
+  color: rgba(255, 255, 255, 0.281);
   letter-spacing: 2px;
+  transform: rotate(-90deg);
 }
 
 .Gunsigi_title2 {
   position: absolute;
   font-family: sans-serif;
+  top: 0;
   right: 50px;
   font-size: 6.5rem;
+  line-height: 6rem;
   font-weight: 600;
   color: $white;
 }
 
 .Gunsigi {
-  width: 35%;
-  height: 100%;
+  width: 500px;
+  height: 600px;
   border-radius: 5px;
   background-color: $white;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
 }
 
 .Gunsigi_site {
   img {
     border-radius: 5px 5px 0 0;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: top;
   }
 }
@@ -50,7 +54,7 @@
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  padding: 35px 0;
+  padding: 70px 0;
 
   img {
     width: 20%;
@@ -92,6 +96,135 @@
 
       &:hover a {
         color: $purple;
+      }
+    }
+  }
+}
+
+@include laptop {
+  .Gunsigi {
+    width: 500px;
+    height: 600px;
+  }
+
+  .Gunsigi_explain {
+    padding: 70px 0;
+  }
+}
+
+@include tablet {
+  .Gunsigi_title {
+    top: 65px;
+    left: -20px;
+    font-size: 4rem;
+  }
+
+  .Gunsigi_title2 {
+    font-size: 4.5rem;
+  }
+
+  .Gunsigi {
+    width: 400px;
+    height: 600px;
+  }
+
+  .Gunsigi_explain {
+    padding: 100px 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .Gunsigi_title {
+    top: 65px;
+    left: -50px;
+    // font-size: 3rem;
+  }
+
+  .Gunsigi_title2 {
+    // font-size: 3.5rem;
+    right: 30px;
+  }
+
+  .Gunsigi {
+    width: 300px;
+    height: 400px;
+  }
+
+  .Gunsigi_explain {
+    padding: 40px 0;
+
+    .text {
+      text-align: center;
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+    }
+
+    .buttons {
+      button {
+        width: 80px;
+        height: 26px;
+        font-size: 1.2rem;
+        border: 2px solid $black;
+        background-color: inherit;
+        border-radius: 3px;
+        cursor: pointer;
+
+        a {
+          display: block;
+          margin: auto;
+          width: 100%;
+          height: 100%;
+          line-height: 23px;
+        }
+      }
+    }
+  }
+}
+
+@include mobile {
+  .Gunsigi_title {
+    top: 95px;
+    left: -25px;
+    font-size: 2rem;
+  }
+
+  .Gunsigi_title2 {
+    font-size: 2.5rem;
+    right: 20px;
+    top: 40px;
+  }
+
+  .Gunsigi {
+    width: 250px;
+    height: 400px;
+  }
+
+  .Gunsigi_explain {
+    padding: 40px 0;
+
+    .text {
+      text-align: center;
+      font-size: 1.1rem;
+      line-height: 1.8rem;
+    }
+
+    .buttons {
+      button {
+        width: 80px;
+        height: 26px;
+        font-size: 1.2rem;
+        border: 2px solid $black;
+        background-color: inherit;
+        border-radius: 3px;
+        cursor: pointer;
+
+        a {
+          display: block;
+          margin: auto;
+          width: 100%;
+          height: 100%;
+          line-height: 23px;
+        }
       }
     }
   }

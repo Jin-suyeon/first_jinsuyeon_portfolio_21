@@ -18,7 +18,7 @@
   transition: all 1s;
 
   .title {
-    background: url(../Images/stack.webp);
+    background: url(../Images/stack_mobile.webp);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -37,6 +37,7 @@
   .white {
     display: flex;
     align-items: center;
+    background-color: $white;
 
     img {
       width: 40px;
@@ -115,5 +116,124 @@
 
   .list12 {
     width: 70px;
+  }
+}
+
+@include laptop {
+  .title2 {
+    font-size: 5rem;
+    line-height: 5rem;
+    font-weight: 900;
+    margin-bottom: 60px;
+    letter-spacing: 4px;
+  }
+
+  .Stack_lists {
+    grid-template-columns: repeat(4, auto);
+
+    div {
+      width: 100px;
+      height: 100px;
+      margin: 15px;
+
+      img {
+        width: 70px;
+      }
+    }
+
+    .list1 {
+      width: 90px;
+    }
+
+    .list2 {
+      width: 55px;
+    }
+
+    .list3 {
+      width: 40px;
+    }
+
+    .list4 {
+      position: relative;
+      z-index: 0;
+      left: 4px;
+      width: 50px;
+    }
+
+    .list7 {
+      width: 40px;
+    }
+
+    .list12 {
+      width: 50px;
+    }
+  }
+}
+
+@include mobile {
+  #Stack_title {
+    .title {
+      background-position: center, left;
+      h1 {
+        font-size: 3rem;
+        padding: 0 90px;
+      }
+    }
+
+    .white {
+      img {
+        width: 30px;
+        margin-left: 15px;
+      }
+    }
+  }
+
+  .title2 {
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 900;
+    margin-bottom: 60px;
+    letter-spacing: 3px;
+  }
+
+  .Stack_lists {
+    grid-template-columns: repeat(3, auto);
+
+    div {
+      width: 80px;
+      height: 80px;
+      margin: 10px;
+
+      img {
+        width: 60px;
+      }
+    }
+
+    .list1 {
+      width: 70px;
+    }
+
+    .list2 {
+      width: 40px;
+    }
+
+    .list3 {
+      width: 30px;
+    }
+
+    .list4 {
+      position: relative;
+      z-index: 0;
+      left: 4px;
+      width: 40px;
+    }
+
+    .list7 {
+      width: 30px;
+    }
+
+    .list12 {
+      width: 35px;
+    }
   }
 }
