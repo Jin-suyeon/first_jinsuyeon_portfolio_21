@@ -38,7 +38,7 @@ function Introduce() {
         <div className="Introduce_explain">
           <button className="resume">
             <a
-              href="https://jinsuyeon.notion.site/822305e9ce6745f0888120bcdc2347a5"
+              href="https://jinsuyeon.notion.site/b1de80eb074f4304aab689ec89aaa4f1"
               rel="noreferrer"
               target="_blank"
             >
